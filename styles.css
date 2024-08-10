@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    /*no crese mas del margen que le doy*/ 
+}
+ 
+
+
+body{
+    font-family: 'roboto',sans-serif;
+    margin: 0;
+}
+ 
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    align-items: center;
+    background-color: rgb(140, 140, 140);
+    padding: 15px 30px;
+    color: white;
+}
+
+header.logo{
+    align-items: center;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:blueviolet;
+    font-size: 1.6em;
+}
+
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header.nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+    ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#somos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#trabajos{ 
+    background-color: rgb(61, 61, 61);
+    color: rgb(220, 220, 121);
+    text-align: center;
+}
+
+#trabajos .container{
+    padding: 100px 0px;
+}
+
+#trabajas p{
+    display: none;
+}
+
+#trabajos .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.carta:first-child{
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+    ,url("media/keka.png");
+}
+
+.carta:nth-child(2){
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+    ,url("media/paso-del-riojpg.jpg");
+}
+
+.carta:nth-child(3){
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+    ,url("media/cruce.jpg");
+}
+
+
+#informacion li{
+    margin: 20px 0px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+#informacion .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/*para cambiar de color una parte de un texto min 40*/
